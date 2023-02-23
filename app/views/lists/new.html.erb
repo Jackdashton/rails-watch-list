@@ -1,0 +1,9 @@
+<h1>Create a new list</h1>
+
+<%= form_for(@list) do |f| %>
+<%# must be form_for, for this exercise %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%# Submit %>
+  <%= f.submit "Create List", class: "btn btn-primary" %>
+<% end %>

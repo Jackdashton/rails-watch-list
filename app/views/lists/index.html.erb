@@ -1,0 +1,9 @@
+<h1>Movie Lists</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+    <%# task in the () is passing an instance of the iterator placeholder task %>
+    <%# creates link using title of task, path to task instance %>
+  <% end %>
+</ul>
